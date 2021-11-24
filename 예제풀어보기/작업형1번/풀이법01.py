@@ -13,9 +13,10 @@ df_qsec=df[['qsec']]
 scaler_minmax=MinMaxScaler()
 scaler_minmax.fit(df_qsec)
 qsec_scaled=scaler_minmax.transform(df_qsec)
-record_overhalf=len(qsec_scaled[qsec_scaled>0.5])
+record_overhalf=len(qsec_scaled[qsec_scaled>0.5]) #0.5보다 큰 값 저장하기
 print("레코드 수량: ",record_overhalf)
 
 
 # 답안 제출 예시
+print("레코드 수량: ",record_overhalf)
 # print(평균변수값)
